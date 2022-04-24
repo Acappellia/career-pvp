@@ -1,6 +1,8 @@
 title @a times 5 20 5
 title @a title {"text":"作 战 开 始","color":"green"}
 
+function careerpvp:init/initScoreBoard
+
 tag @a remove dead
 effect clear @a minecraft:resistance
 effect give @a minecraft:instant_health 1 9
