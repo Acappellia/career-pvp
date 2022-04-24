@@ -1,0 +1,17 @@
+scoreboard players set @e[team= ] team 0
+scoreboard players set @e[team=1 ] team 1
+scoreboard players set @e[team=2 ] team 2
+scoreboard players set @e[team=3 ] team 3
+scoreboard players set @e[team=4 ] team 4
+scoreboard players set @e[team=5 ] team 5
+scoreboard players set @e[team=6 ] team 6
+scoreboard players set @e[team=7 ] team 7
+scoreboard players set @e[team=8 ] team 8
+scoreboard players set @e[team=9 ] team 9
+scoreboard players set @e[team=10 ] team 10
+scoreboard players set @e[team=11 ] team 11
+scoreboard players set @e[team=12 ] team 12
+scoreboard players set @e[team=13 ] team 13
+scoreboard players set @e[team=14 ] team 14
+scoreboard players set @e[team=15 ] team 15
+scoreboard players set @e[team=16 ] team 16

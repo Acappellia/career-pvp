@@ -1,0 +1,14 @@
+
+spawn player join team
+/team join 11 @p[distance=..5,team=]
+
+
+
+possible bugs 
+
+- player can choose the same career as an OFFLINE teammate -- use an armor_stand to record the unavailable careers --- TBD
+
+
+TBD
+
+- how to set spreadplayer range?
