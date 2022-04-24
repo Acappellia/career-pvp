@@ -5,7 +5,7 @@ scoreboard players reset @a death_inter
 
 scoreboard players set @a[team=,scores={death_cd=..0}] death_cd 21
 
-scoreboard players add death_cd 1
+scoreboard players add @a death_cd 1
 execute as @a[scores={death_cd=-600 }] run title @s actionbar [{"text":"等待重生中，剩余 ","color":"yellow"},{"text":"30 ","color":"aqua"},{"text":"秒","color":"yellow"}]
 execute as @a[scores={death_cd=-500 }] run title @s actionbar [{"text":"等待重生中，剩余 ","color":"yellow"},{"text":"25 ","color":"aqua"},{"text":"秒","color":"yellow"}]
 execute as @a[scores={death_cd=-400 }] run title @s actionbar [{"text":"等待重生中，剩余 ","color":"yellow"},{"text":"20 ","color":"aqua"},{"text":"秒","color":"yellow"}]
@@ -21,5 +21,5 @@ execute as @a[scores={death_cd=-60 }] run title @s actionbar [{"text":"等待重
 execute as @a[scores={death_cd=-40 }] run title @s actionbar [{"text":"等待重生中，剩余 ","color":"yellow"},{"text":"2 ","color":"aqua"},{"text":"秒","color":"yellow"}]
 execute as @a[scores={death_cd=-20 }] run title @s actionbar [{"text":"等待重生中，剩余 ","color":"yellow"},{"text":"1 ","color":"aqua"},{"text":"秒","color":"yellow"}]
 execute as @a[scores={death_cd=-1 }] run title @s actionbar [{"text":"等待重生中，剩余 ","color":"yellow"},{"text":"0 ","color":"aqua"},{"text":"秒","color":"yellow"}]
-execute as @a[scores={death_cd=-1 },tag=!death_career_select] run teleport @s @e[type=armor_stand,tag=respawn]
+execute as @a[scores={death_cd=-1 },tag=!death_career_select] run teleport @s @e[type=armor_stand,tag=respawn,limit=1]
 execute as @a[scores={death_cd=20 }] run title @s actionbar ""

@@ -4,8 +4,8 @@ effect give @a minecraft:saturation 10 0 true
 tag @a[gamemode=!adventure] add spec
 tag @a[gamemode=adventure] remove spec
 
-function careerpvp:internal/internalUpdateTeammateTick
-function careerpvp:internal/internalPlayerKillTick
-function careerpvp:internal/internalReviveCountdownTick
-function careerpvp:internal/internalLocSpawnIngameTick
-function careerpvp:internal/internalLocRespawnIngameTick
+function careerpvp:internal/internalupdateteammatetick
+function careerpvp:internal/internalplayerkilltick
+function careerpvp:internal/internalrevivecountdowntick
+function careerpvp:internal/internallocspawningametick
+function careerpvp:internal/internallocrespawningametick

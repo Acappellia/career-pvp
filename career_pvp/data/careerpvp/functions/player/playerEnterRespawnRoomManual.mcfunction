@@ -1,1 +1,1 @@
-teleport @p[distance=..4,tag=dead,scores={death_cd=0..},gamemode=!spectator] @e[type=armor_stand,tag=respawnroom]
+teleport @p[distance=..4,tag=dead,scores={death_cd=0..},gamemode=!spectator] @e[type=armor_stand,tag=respawnroom,limit=1]
