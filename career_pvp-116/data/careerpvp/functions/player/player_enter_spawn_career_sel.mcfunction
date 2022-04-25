@@ -1,0 +1,1 @@
+teleport @p[distance=..5,team=!] @e[type=armor_stand,tag=spawnsel,limit=1]
