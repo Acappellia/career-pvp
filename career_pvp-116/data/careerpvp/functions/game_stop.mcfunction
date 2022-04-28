@@ -10,3 +10,7 @@ teleport @p[distance=..15] @e[type=armor_stand,tag=spawn,limit=1]
 
 tag @e[type=armor_stand,tag=spawn] remove ingame
 tag @e[type=armor_stand,tag=respawn] remove ingame
+
+tag @a remove death_career_select
+tag @a remove dead
+scoreboard players set @a death_cd 21
