@@ -8,7 +8,7 @@ effect clear @a minecraft:resistance
 effect give @a minecraft:instant_health 1 9
 effect give @a minecraft:resistance 10 9
 
-execute at @e[type=armor_stand,tag=mapcenter] run spreadplayers ~ ~ 20 200 true @a[team=!]
+execute at @e[type=armor_stand,tag=mapcenter] run spreadplayers ~ ~ 20 180 true @a[team=!]
 
 clear @a[team=,gamemode=!creative]
 scoreboard players set @a[team=,gamemode=!creative] spec 1

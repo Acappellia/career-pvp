@@ -46,3 +46,20 @@ team join 13 Team.13
 team join 14 Team.14
 team join 15 Team.15
 team join 16 Team.16
+
+team join 1 @e[type=armor_stand,tag=team_1]
+team join 2 @e[type=armor_stand,tag=team_2]
+team join 3 @e[type=armor_stand,tag=team_3]
+team join 4 @e[type=armor_stand,tag=team_4]
+team join 5 @e[type=armor_stand,tag=team_5]
+team join 6 @e[type=armor_stand,tag=team_6]
+team join 7 @e[type=armor_stand,tag=team_7]
+team join 8 @e[type=armor_stand,tag=team_8]
+team join 9 @e[type=armor_stand,tag=team_9]
+team join 10 @e[type=armor_stand,tag=team_10]
+team join 11 @e[type=armor_stand,tag=team_11]
+team join 12 @e[type=armor_stand,tag=team_12]
+team join 13 @e[type=armor_stand,tag=team_13]
+team join 14 @e[type=armor_stand,tag=team_14]
+team join 15 @e[type=armor_stand,tag=team_15]
+team join 16 @e[type=armor_stand,tag=team_16]
