@@ -14,3 +14,5 @@ tag @e[type=armor_stand,tag=respawn] remove ingame
 tag @a remove death_career_select
 tag @a remove dead
 scoreboard players set @a death_cd 21
+
+gamerule sendCommandFeedback true

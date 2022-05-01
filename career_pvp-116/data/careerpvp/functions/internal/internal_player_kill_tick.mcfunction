@@ -125,5 +125,6 @@ execute as @a[scores={kill_inter=1..,kill_successive=11..}] run tellraw @a [{"se
 execute as @a[scores={kill_successive=1..}] run scoreboard players remove @s kill_timer 1
 execute as @a[scores={kill_timer=0}] run scoreboard players reset @s kill_successive
 
+execute as @a[scores={kill_inter=1..}] unless score @s kill_successive <= @s kill_successive_max run scoreboard players operation @s kill_successive_max = @s kill_successive
 execute as @a[scores={kill_inter=1..}] unless score @s kill_life <= @s kill_life_max run scoreboard players operation @s kill_life_max = @s kill_life
 scoreboard players remove @a[scores={kill_inter=1..}] kill_inter 1

@@ -1,3 +1,10 @@
+scoreboard objectives remove career
+scoreboard objectives add career dummy
+scoreboard objectives remove team
+scoreboard objectives add team dummy
+scoreboard objectives remove member
+scoreboard objectives add member dummy "队伍人数"
+
 team add 1
 team add 2
 team add 3

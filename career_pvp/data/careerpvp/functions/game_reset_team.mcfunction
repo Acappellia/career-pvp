@@ -9,8 +9,10 @@ tag @e[tag=team] remove chosen_8
 tag @e[tag=team] remove chosen_9
 tag @e[tag=team] remove chosen_10
 
-scoreboard players set @a career 0
-scoreboard players set @a give_item 0
+scoreboard objectives remove career
+scoreboard objectives add career dummy
+scoreboard objectives remove give_item
+scoreboard objectives add give_item dummy
 clear @a
 
 team empty 1
@@ -29,6 +31,25 @@ team empty 13
 team empty 14
 team empty 15
 team empty 16
+scoreboard objectives remove member
+scoreboard objectives add member dummy "队伍人数"
+scoreboard players set Team.1 member 0
+scoreboard players set Team.2 member 0
+scoreboard players set Team.3 member 0
+scoreboard players set Team.4 member 0
+scoreboard players set Team.5 member 0
+scoreboard players set Team.6 member 0
+scoreboard players set Team.7 member 0
+scoreboard players set Team.8 member 0
+scoreboard players set Team.9 member 0
+scoreboard players set Team.10 member 0
+scoreboard players set Team.11 member 0
+scoreboard players set Team.12 member 0
+scoreboard players set Team.13 member 0
+scoreboard players set Team.14 member 0
+scoreboard players set Team.15 member 0
+scoreboard players set Team.16 member 0
+scoreboard objectives setdisplay sidebar member
 
 team join 1 Team.1
 team join 2 Team.2
