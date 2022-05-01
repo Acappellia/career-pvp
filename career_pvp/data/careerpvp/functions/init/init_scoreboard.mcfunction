@@ -8,8 +8,8 @@ scoreboard objectives remove kill_life_max
 scoreboard objectives add kill_life_max dummy "一命击败最多敌人"
 scoreboard objectives remove kill_successive
 scoreboard objectives add kill_successive playerKillCount
-scoreboard objectives remove kill_successive_max
-scoreboard objectives add kill_successive_max dummy "最高连杀"
+scoreboard objectives remove kill_suc_max
+scoreboard objectives add kill_suc_max dummy "最高连杀"
 scoreboard objectives remove kill_timer
 scoreboard objectives add kill_timer dummy
 scoreboard objectives remove death

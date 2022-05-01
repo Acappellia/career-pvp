@@ -21,3 +21,4 @@ tag @e[type=armor_stand,tag=spawn] add ingame
 tag @e[type=armor_stand,tag=respawn] add ingame
 
 gamerule sendCommandFeedback false
+scoreboard objectives setdisplay sidebar score

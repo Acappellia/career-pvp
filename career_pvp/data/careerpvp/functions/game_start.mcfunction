@@ -20,4 +20,5 @@ teleport @p[distance=..15] @e[type=armor_stand,tag=respawn,limit=1]
 tag @e[type=armor_stand,tag=spawn] add ingame
 tag @e[type=armor_stand,tag=respawn] add ingame
 
+scoreboard objectives setdisplay sidebar score
 gamerule sendCommandFeedback false
