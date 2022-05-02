@@ -6,4 +6,5 @@ execute if score Team.12 member matches ..4 run tellraw @p[distance=..3,team=] "
 execute if score Team.12 member matches ..4 run tellraw @p[distance=..3,team=!,team=!12] "您已经成功更换队伍！"
 execute if score Team.12 member matches ..4 run execute as @p[distance=..3,team=!12] at @s run function careerpvp:leave_team
 execute if score Team.12 member matches ..4 run team join 12 @p[distance=..3,team=]
-execute if score Team.12 member matches ..4 run scoreboard players add Team.12 member 1
+execute store result score Team.12 member run team list 12
+scoreboard players remove Team.12 member 2
