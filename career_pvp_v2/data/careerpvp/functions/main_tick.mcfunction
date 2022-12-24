@@ -9,3 +9,4 @@ function careerpvp:internal/internal_player_kill_tick
 function careerpvp:internal/internal_revive_countdown_tick
 function careerpvp:internal/internal_loc_spawn_ingame_tick
 function careerpvp:internal/internal_loc_respawn_ingame_tick
+function careerpvp:internal/internal_manabar
