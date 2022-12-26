@@ -5,7 +5,7 @@ scoreboard objectives add spec dummy
 
 gamemode adventure @a[gamemode=!creative]
 
-item replace entity @a armor.head with air
+item replace entity @a armor.feet with air
 
 tag @a remove death_career_select
 tag @a remove dead

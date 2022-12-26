@@ -1,21 +1,45 @@
-title @a[scores={mana=0,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◇◇◇◇◇ ◇◇◇◇◇ ◇◇◇◇◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=1,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◇◇◇◇ ◇◇◇◇◇ ◇◇◇◇◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=2,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◇◇◇ ◇◇◇◇◇ ◇◇◇◇◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=3,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◇◇ ◇◇◇◇◇ ◇◇◇◇◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=4,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◇ ◇◇◇◇◇ ◇◇◇◇◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=5,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◇◇◇◇◇ ◇◇◇◇◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=6,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◇◇◇◇ ◇◇◇◇◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=7,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◆◇◇◇ ◇◇◇◇◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=8,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◆◆◇◇ ◇◇◇◇◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=9,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◆◆◆◇ ◇◇◇◇◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=10,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◆◆◆◆ ◇◇◇◇◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=11,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◆◆◆◆ ◆◇◇◇◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=12,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◆◆◆◆ ◆◆◇◇◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=13,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◆◆◆◆ ◆◆◆◇◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=14,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◆◆◆◆ ◆◆◆◆◇ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=15,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◆◆◆◆ ◆◆◆◆◆ ◇◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=16,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◆◆◆◆ ◆◆◆◆◆ ◆◇◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=17,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◆◆◆◆ ◆◆◆◆◆ ◆◆◇◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=18,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◆◆◆◆ ◆◆◆◆◆ ◆◆◆◇◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=19,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◆◆◆◆ ◆◆◆◆◆ ◆◆◆◆◇","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
-title @a[scores={mana=20,death_cd=21.. }] actionbar [{"text":"魔力值 ","color":"aqua","bold":true},{"text":"[ ","color":"white","bold":true},{"text":"◆◆◆◆◆ ◆◆◆◆◆ ◆◆◆◆◆ ◆◆◆◆◆","color":"blue","bold":false},{"text":" ]","color":"white","bold":true},{"text":" MANA","color":"aqua","bold":true}]
+xp set @a 240 levels
+xp set @a[scores={mana=0}] 0 points
+xp set @a[scores={mana=1}] 100 points
+xp set @a[scores={mana=2}] 200 points
+xp set @a[scores={mana=3}] 300 points
+xp set @a[scores={mana=4}] 400 points
+xp set @a[scores={mana=5}] 500 points
+xp set @a[scores={mana=6}] 600 points
+xp set @a[scores={mana=7}] 700 points
+xp set @a[scores={mana=8}] 800 points
+xp set @a[scores={mana=9}] 900 points
+xp set @a[scores={mana=10}] 1000 points
+xp set @a[scores={mana=11}] 1100 points
+xp set @a[scores={mana=12}] 1200 points
+xp set @a[scores={mana=13}] 1300 points
+xp set @a[scores={mana=14}] 1400 points
+xp set @a[scores={mana=15}] 1500 points
+xp set @a[scores={mana=16}] 1600 points
+xp set @a[scores={mana=17}] 1700 points
+xp set @a[scores={mana=18}] 1800 points
+xp set @a[scores={mana=19}] 1900 points
+xp set @a[scores={mana=20}] 2000 points
+xp set @a[scores={mana=0}] 0 levels
+xp set @a[scores={mana=1}] 1 levels
+xp set @a[scores={mana=2}] 2 levels
+xp set @a[scores={mana=3}] 3 levels
+xp set @a[scores={mana=4}] 4 levels
+xp set @a[scores={mana=5}] 5 levels
+xp set @a[scores={mana=6}] 6 levels
+xp set @a[scores={mana=7}] 7 levels
+xp set @a[scores={mana=8}] 8 levels
+xp set @a[scores={mana=9}] 9 levels
+xp set @a[scores={mana=10}] 10 levels
+xp set @a[scores={mana=11}] 11 levels
+xp set @a[scores={mana=12}] 12 levels
+xp set @a[scores={mana=13}] 13 levels
+xp set @a[scores={mana=14}] 14 levels
+xp set @a[scores={mana=15}] 15 levels
+xp set @a[scores={mana=16}] 16 levels
+xp set @a[scores={mana=17}] 17 levels
+xp set @a[scores={mana=18}] 18 levels
+xp set @a[scores={mana=19}] 19 levels
+xp set @a[scores={mana=20}] 20 levels
+xp set @a[scores={mana=..-1}] 666 levels
+xp set @a[scores={mana=21..}] 999 levels
