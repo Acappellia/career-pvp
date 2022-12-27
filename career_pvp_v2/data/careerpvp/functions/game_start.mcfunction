@@ -1,5 +1,6 @@
 title @a times 5 20 5
 title @a title {"text":"作 战 开 始","color":"green"}
+title @a times 0 10 5 
 
 function careerpvp:init/init_scoreboard
 
