@@ -1,10 +1,10 @@
 import math
 from tkinter import filedialog
 
-points = 100
-r = 16
+points = 120
+r = 20
 dy = "0.5"
-particle = "small_flame"
+particle = "bubble_pop"
 
 file_dir = filedialog.askopenfilename(title='Choose file',filetypes=[('mcfunction files','.mcfunction')],initialdir='./data/careerpvp/functions/effect')
 
