@@ -6,13 +6,13 @@ scoreboard players operation @s rp_x -= @e[type=armor_stand,tag=rp_selected,limi
 scoreboard players operation @s rp_y -= @e[type=armor_stand,tag=rp_selected,limit=1] rp_y
 scoreboard players operation @s rp_z -= @e[type=armor_stand,tag=rp_selected,limit=1] rp_z 
 
-execute if score @s rp_x matches -3..3 if score @s rp_y matches -3..3 if score @s rp_z matches -3..3 run tag @s add rp_tpdone
+execute if score @s rp_x matches -1..1 if score @s rp_y matches -1..1 if score @s rp_z matches -1..1 run tag @s add rp_tpdone
 execute as @s[tag=rp_tpdone] at @s unless block ~ ~ ~ air run function careerpvp:respawn/unstuck_loop
 
-execute as @s[tag=!rp_tpdone] at @s if score @s rp_x matches 4.. run tp ~-3 ~ ~
-execute as @s[tag=!rp_tpdone] at @s if score @s rp_x matches ..-4 run tp ~3 ~ ~
-execute as @s[tag=!rp_tpdone] at @s if score @s rp_y matches 4.. run tp ~ ~-3 ~
-execute as @s[tag=!rp_tpdone] at @s if score @s rp_y matches ..-4 run tp ~ ~3 ~
-execute as @s[tag=!rp_tpdone] at @s if score @s rp_z matches 4.. run tp ~ ~ ~-3
-execute as @s[tag=!rp_tpdone] at @s if score @s rp_z matches ..-4 run tp ~ ~ ~3
+execute as @s[tag=!rp_tpdone] at @s if score @s rp_x matches 2.. run tp ~-2 ~ ~
+execute as @s[tag=!rp_tpdone] at @s if score @s rp_x matches ..-2 run tp ~2 ~ ~
+execute as @s[tag=!rp_tpdone] at @s if score @s rp_y matches 2.. run tp ~ ~-2 ~
+execute as @s[tag=!rp_tpdone] at @s if score @s rp_y matches ..-2 run tp ~ ~2 ~
+execute as @s[tag=!rp_tpdone] at @s if score @s rp_z matches 2.. run tp ~ ~ ~-2
+execute as @s[tag=!rp_tpdone] at @s if score @s rp_z matches ..-2 run tp ~ ~ ~2
 execute as @s[tag=!rp_tpdone] at @s run function careerpvp:respawn/rp_tploop

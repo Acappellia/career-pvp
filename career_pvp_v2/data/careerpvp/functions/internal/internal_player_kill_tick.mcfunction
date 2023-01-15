@@ -96,7 +96,7 @@ execute as @a[scores={kill_inter=1..,kill_life=12}] run item replace entity @s a
 execute as @a[scores={kill_inter=1..,kill_life=13..}] run item replace entity @s armor.feet with chainmail_boots{display:{Name:'{"text":"嗜血诅咒"}'},HideFlags:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-30,Operation:0,UUID:[I;1887330007,1902264476,-1228101230,-1161993134],Slot:"feet"}]} 1
 
 execute as @a unless score @s kill_life matches 3.. run item replace entity @s armor.feet with air
-effect give @a[scores={kill_life=5..}] minecraft:glowing 1 0 true
+execute as @a[scores={kill_inter=1..,kill_life=5..}] run effect give @s glowing 5 0 true
 
 execute as @a[scores={kill_inter=1..,kill_life=5}] run tellraw @a [{"selector":"@s"},{"text":" 持续击败了 ","color":"green"},{"text":"5","color":"dark_red"},{"text":" 名敌人！","color":"green"}]
 execute as @a[scores={kill_inter=1..,kill_life=5}] run tellraw @a [{"selector":"@s"},{"text":" 获得了 ","color":"gold"},{"text":"3","color":"yellow"},{"text":" 分的额外悬赏！","color":"gold"}]
