@@ -2,7 +2,6 @@ execute at @e[type=armor_stand, tag=respawn, tag=ingame] run scoreboard players 
 
 execute at @e[type=armor_stand, tag=respawn, tag=ingame] run tag @a[distance=..10,tag=!dead,team=!,gamemode=!creative] add login
 execute as @a[tag=login] run scoreboard players set @s kill_life 0
-execute as @a[tag=login] run title @s times 0 10 5 
 scoreboard players operation @a[tag=login] death_cd = revive_time int_val
 tag @a[tag=login] add dead
 tag @a remove login

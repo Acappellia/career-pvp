@@ -5,14 +5,18 @@ effect give @a minecraft:instant_health 1 9
 
 clear @a[gamemode=!creative]
 
-tellraw @p[distance=..15] "请输入 /setspawn default 以更新重生点"
-teleport @p[distance=..15] @e[type=armor_stand,tag=spawn,limit=1]
-
 tag @e[type=armor_stand,tag=spawn] remove ingame
 tag @e[type=armor_stand,tag=respawn] remove ingame
 
 tag @a remove death_career_select
 tag @a remove dead
 scoreboard players set @a death_cd 21
+
+teleport @a[gamemode=!creative] @e[type=armor_stand,tag=spawn,limit=1]
+
+scoreboard objectives remove spec
+scoreboard objectives add spec dummy
+
+gamemode adventure @a[gamemode=!creative]
 
 gamerule sendCommandFeedback true

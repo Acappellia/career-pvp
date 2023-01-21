@@ -4,6 +4,8 @@ scoreboard objectives remove team
 scoreboard objectives add team dummy
 scoreboard objectives remove member
 scoreboard objectives add member dummy "队伍人数"
+scoreboard objectives remove setteam
+scoreboard objectives add setteam dummy
 
 team add 1
 team add 2

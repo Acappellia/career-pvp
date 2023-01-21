@@ -63,18 +63,3 @@ scoreboard objectives remove mobkill
 scoreboard objectives add mobkill minecraft.killed:chicken "只因击杀数"
 scoreboard objectives remove mobkill_inter
 scoreboard objectives add mobkill_inter minecraft.killed:chicken
-
-scoreboard objectives remove int_val
-scoreboard objectives add int_val dummy
-scoreboard objectives remove timer
-scoreboard objectives add timer dummy
-scoreboard players set revive_time int_val -601
-scoreboard players set start_delay int_val -201
-scoreboard players set match_time int_val 54001
-
-scoreboard objectives remove mana
-scoreboard objectives add mana dummy
-
-bossbar add match_timer "本局游戏剩余时间"
-bossbar set match_timer color blue
-bossbar set match_timer style notched_10
