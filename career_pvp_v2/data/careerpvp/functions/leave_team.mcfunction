@@ -17,6 +17,7 @@ scoreboard players set @p[tag=team_leave,distance=..10] career 0
 scoreboard players set @p[tag=team_leave,distance=..10] give_item 0
 clear @p[tag=team_leave,distance=..10]
 team leave @p[tag=team_leave,distance=..10]
+tellraw @p[tag=team_leave,distance=..10] "已清除职业选择并离开当前队伍"
 tag @a remove team_leave
 
 function careerpvp:update_members
