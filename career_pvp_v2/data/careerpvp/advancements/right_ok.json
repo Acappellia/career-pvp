@@ -4,7 +4,9 @@
             "trigger": "minecraft:effects_changed",
             "conditions": {
                 "effects": {
-                    "minecraft:unluck": {}
+                    "minecraft:unluck": {
+                        "duration": 1
+                    }
                 }
             }
         }
@@ -14,7 +16,8 @@
             "item": "minecraft:red_dye"
         },
         "title": "【右键】技能冷却完成",
-        "description": ""
+        "description": "技能冷却提示",
+        "show_toast": true
     },
     "rewards": {
         "function": "careerpvp:advancements/right_ok"

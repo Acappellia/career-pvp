@@ -13,6 +13,7 @@ tag @e[type=armor_stand,tag=mapcenter] remove ingame
 tag @a remove death_career_select
 tag @a remove dead
 scoreboard players set @a death_cd 21
+bossbar set match_timer players
 
 teleport @a[gamemode=!creative] @e[type=armor_stand,tag=spawn,limit=1]
 

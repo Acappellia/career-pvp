@@ -7,7 +7,7 @@ tag @a remove dead
 effect clear @a minecraft:resistance
 effect give @a minecraft:instant_health 1 9
 effect give @a minecraft:resistance 10 9
-scoreboard players set @a[team=] mana 20
+scoreboard players set @a[team=!] mana 20
 
 execute at @e[type=armor_stand,tag=mapcenter] run spreadplayers ~ ~ 20 200 true @a[team=!]
 

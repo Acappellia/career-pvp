@@ -4,7 +4,9 @@
             "trigger": "minecraft:effects_changed",
             "conditions": {
                 "effects": {
-                    "minecraft:hero_of_the_village": {}
+                    "minecraft:hero_of_the_village": {
+                        "duration": 1
+                    }
                 }
             }
         }
@@ -14,7 +16,8 @@
             "item": "minecraft:purple_dye"
         },
         "title": "【跳板】冷却完成",
-        "description": ""
+        "description": "技能冷却提示",
+        "show_toast": true
     },
     "rewards": {
         "function": "careerpvp:advancements/jumppad_ok"

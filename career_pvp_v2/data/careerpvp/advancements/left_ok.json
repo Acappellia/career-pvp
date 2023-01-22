@@ -4,7 +4,9 @@
             "trigger": "minecraft:effects_changed",
             "conditions": {
                 "effects": {
-                    "minecraft:luck": {}
+                    "minecraft:luck": {
+                        "duration": 1
+                    }
                 }
             }
         }
@@ -14,7 +16,8 @@
             "item": "minecraft:blue_dye"
         },
         "title": "【左键】技能冷却完成",
-        "description": ""
+        "description": "技能冷却提示",
+        "show_toast": true
     },
     "rewards": {
         "function": "careerpvp:advancements/left_ok"
