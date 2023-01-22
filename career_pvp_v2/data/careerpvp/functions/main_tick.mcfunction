@@ -6,6 +6,7 @@ tag @a[gamemode=adventure] remove spec
 kill @e[type=item]
 scoreboard players add start_delay timer 1
 execute store result bossbar match_timer value run scoreboard players remove match_time timer 1
+execute as @e[type=armor_stand, tag=spawn, tag=ingame] run bossbar set match_timer players @a
 
 execute if score start_delay timer matches -200..-181 run title @a title "10"
 execute if score start_delay timer matches -180..-161 run title @a title "9"

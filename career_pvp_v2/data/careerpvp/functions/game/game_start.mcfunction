@@ -30,3 +30,4 @@ scoreboard players operation match_time timer = match_time int_val
 bossbar set match_timer players @a
 
 gamerule sendCommandFeedback false
+scoreboard players set match_end int_val 0

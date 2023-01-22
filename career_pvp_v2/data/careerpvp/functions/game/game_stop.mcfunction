@@ -23,3 +23,4 @@ scoreboard objectives add spec dummy
 gamemode adventure @a[gamemode=!creative]
 
 gamerule sendCommandFeedback true
+scoreboard players set match_end int_val 1
