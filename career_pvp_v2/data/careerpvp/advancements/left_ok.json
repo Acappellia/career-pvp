@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "luck_timeover": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:luck": {}
+                }
+            }
+        }
+    },
+    "display": {
+        "icon": {
+            "item": "minecraft:blue_dye"
+        },
+        "title": "【左键】技能冷却完成",
+        "description": ""
+    },
+    "rewards": {
+        "function": "careerpvp:advancements/left_ok"
+    }
+}

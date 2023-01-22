@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "unluck_timeover": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:unluck": {}
+                }
+            }
+        }
+    },
+    "display": {
+        "icon": {
+            "item": "minecraft:red_dye"
+        },
+        "title": "【右键】技能冷却完成",
+        "description": ""
+    },
+    "rewards": {
+        "function": "careerpvp:advancements/right_ok"
+    }
+}

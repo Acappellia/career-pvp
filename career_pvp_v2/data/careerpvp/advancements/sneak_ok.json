@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "badomen_timeover": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:bad_omen": {}
+                }
+            }
+        }
+    },
+    "display": {
+        "icon": {
+            "item": "minecraft:pink_dye"
+        },
+        "title": "【潜行键】技能冷却完成",
+        "description": ""
+    },
+    "rewards": {
+        "function": "careerpvp:advancements/sneak_ok"
+    }
+}

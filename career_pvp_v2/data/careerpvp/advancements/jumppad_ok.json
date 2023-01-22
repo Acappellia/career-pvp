@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "hero_timeover": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:hero_of_the_village": {}
+                }
+            }
+        }
+    },
+    "display": {
+        "icon": {
+            "item": "minecraft:purple_dye"
+        },
+        "title": "【跳板】冷却完成",
+        "description": ""
+    },
+    "rewards": {
+        "function": "careerpvp:advancements/jumppad_ok"
+    }
+}
