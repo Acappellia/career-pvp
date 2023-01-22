@@ -9,6 +9,11 @@ effect give @a minecraft:instant_health 1 9
 effect give @a minecraft:resistance 10 9
 scoreboard players set @a[team=!] mana 20
 
+advancement revoke @s only careerpvp:sneak_ok
+advancement revoke @s only careerpvp:left_ok
+advancement revoke @s only careerpvp:right_ok
+advancement revoke @s only careerpvp:jumppad_ok
+
 execute at @e[type=armor_stand,tag=mapcenter] run spreadplayers ~ ~ 20 200 true @a[team=!]
 
 clear @a[team=,gamemode=!creative]

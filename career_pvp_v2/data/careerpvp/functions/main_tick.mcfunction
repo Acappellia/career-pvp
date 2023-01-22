@@ -63,3 +63,4 @@ function careerpvp:internal/internal_loc_respawn_ingame_tick
 function careerpvp:internal/internal_manabar
 function careerpvp:effect/effect_range_loop
 function careerpvp:mobs/mob_tick
+function careerpvp:advancements/tick_advancement_revoke

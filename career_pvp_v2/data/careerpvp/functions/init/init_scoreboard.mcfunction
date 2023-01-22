@@ -61,12 +61,27 @@ scoreboard objectives add killed_by_t16 killedByTeam.black
 
 scoreboard objectives remove mobkill
 scoreboard objectives add mobkill dummy "怪物击杀数"
+scoreboard objectives remove mobkill_iron
+scoreboard objectives add mobkill_iron minecraft.killed:iron_golem
 scoreboard objectives remove mobkill_a
 scoreboard objectives add mobkill_a minecraft.killed:zombie_villager
 scoreboard objectives remove mobkill_b
 scoreboard objectives add mobkill_b minecraft.killed:zombie
 scoreboard objectives remove mobkill_c
 scoreboard objectives add mobkill_c minecraft.killed:fox
+
+scoreboard objectives remove mobkilled
+scoreboard objectives add mobkilled dummy "被怪物击杀次数"
+scoreboard objectives remove mobkilled_int
+scoreboard objectives add mobkilled_int dummy "被怪物击杀次数"
+scoreboard objectives remove killed_by_iron
+scoreboard objectives add killed_by_iron minecraft.killed_by:iron_golem
+scoreboard objectives remove killed_by_aa
+scoreboard objectives add killed_by_a minecraft.killed_by:zombie_villager
+scoreboard objectives remove killed_by_b
+scoreboard objectives add killed_by_b minecraft.killed_by:zombie
+scoreboard objectives remove killed_by_c
+scoreboard objectives add killed_by_c minecraft.killed_by:fox
 
 scoreboard objectives remove int_val
 scoreboard objectives add int_val dummy
@@ -80,6 +95,16 @@ scoreboard players set mob_interval timer 0
 
 scoreboard objectives remove mana
 scoreboard objectives add mana dummy
+scoreboard objectives remove sneak_timer
+scoreboard objectives add sneak_timer minecraft.custom:time_since_death
+scoreboard objectives remove right_timer
+scoreboard objectives add right_timer minecraft.custom:time_since_death
+scoreboard objectives remove left_timer
+scoreboard objectives add left_timer minecraft.custom:time_since_death
+scoreboard objectives remove jumppad_timer
+scoreboard objectives add jumppad_timer minecraft.custom:time_since_death
+scoreboard objectives remove death_timer
+scoreboard objectives add death_timer minecraft.custom:time_since_death
 
 bossbar add match_timer "本局游戏剩余时间"
 bossbar set match_timer color blue

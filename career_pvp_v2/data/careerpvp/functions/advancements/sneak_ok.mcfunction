@@ -1,2 +1,2 @@
-execute at @s run playsound item.armor.equip_diamond master @s ~ ~ ~ 1 1.2
-advancement revoke @s only careerpvp:sneak_ok
+execute at @s run playsound block.note_block.pling master @s ~ ~ ~ 0.3 0.707
+scoreboard players set @s sneak_timer -2

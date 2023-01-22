@@ -1,4 +1,5 @@
 {
+    "parent": "minecraft:story/root",
     "criteria": {
         "hero_timeover": {
             "trigger": "minecraft:effects_changed",
@@ -17,7 +18,10 @@
         },
         "title": "【跳板】冷却完成",
         "description": "技能冷却提示",
-        "show_toast": true
+        "show_toast": true,
+        "frame": "task",
+        "announce_to_chat": false,
+        "hidden": false
     },
     "rewards": {
         "function": "careerpvp:advancements/jumppad_ok"

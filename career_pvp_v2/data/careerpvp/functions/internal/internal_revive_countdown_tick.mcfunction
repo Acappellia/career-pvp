@@ -1,3 +1,6 @@
+execute as @a[scores={death_timer=0}] at @s run particle poof ~ ~ ~ 0.3 0.8 0.3 0.05 50
+execute as @a[scores={death_timer=0}] at @s run playsound entity.cat.death master @a ~ ~ ~ 1 1
+
 execute as @a[scores={death_inter=1..,killed_by_t1=1..,kill_life=5..6}] run scoreboard players add Team.1 score 3
 execute as @a[scores={death_inter=1..,killed_by_t1=1..,kill_life=7..8}] run scoreboard players add Team.1 score 6
 execute as @a[scores={death_inter=1..,killed_by_t1=1..,kill_life=9..10}] run scoreboard players add Team.1 score 10

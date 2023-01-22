@@ -1,2 +1,2 @@
-execute at @s run playsound item.armor.equip_netherite master @s ~ ~ ~ 1 1.2
-advancement revoke @s only careerpvp:left_ok
+execute at @s run playsound block.note_block.guitar master @s ~ ~ ~ 1 1.414
+scoreboard players set @s left_timer -2
