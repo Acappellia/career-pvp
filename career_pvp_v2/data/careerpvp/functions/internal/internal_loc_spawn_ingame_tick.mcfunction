@@ -16,6 +16,7 @@ title @a[tag=revive_or_rejoin] subtitle ""
 title @a[tag=revive_or_rejoin] title ""
 
 tag @a remove new_spec
+tag @a remove login_spec
 tag @a remove revive_or_rejoin
 
 execute at @e[type=armor_stand, tag=spawn, tag=ingame] run tag @a[distance=..10] remove death_career_select

@@ -1,3 +1,4 @@
+forceload add ~ ~ ~ ~
 scoreboard objectives remove career
 scoreboard objectives add career dummy
 scoreboard objectives remove team
