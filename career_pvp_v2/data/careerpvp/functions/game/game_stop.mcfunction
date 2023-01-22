@@ -7,6 +7,8 @@ clear @a[gamemode=!creative]
 
 tag @e[type=armor_stand,tag=spawn] remove ingame
 tag @e[type=armor_stand,tag=respawn] remove ingame
+tag @e[type=armor_stand,tag=mob_refresh] remove ingame
+tag @e[type=armor_stand,tag=mapcenter] remove ingame
 
 tag @a remove death_career_select
 tag @a remove dead

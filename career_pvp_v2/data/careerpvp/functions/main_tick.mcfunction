@@ -20,6 +20,11 @@ execute if score start_delay timer matches -20..-2 run title @a title "1"
 execute if score start_delay timer matches -1 run tellraw @a "本局游戏开始"
 execute if score start_delay timer matches -1 run function careerpvp:game/game_start
 
+execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run title @a[team=!,distance=197..,gamemode=adventure] actionbar "即将离开地图边界，请返回地图作战区域！"
+execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run effect give @a[team=!,distance=200..,gamemode=adventure] slowness 1 2
+execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run effect give @a[team=!,distance=205..,gamemode=adventure] wither 1 9
+execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run effect give @a[team=!,distance=215..,gamemode=adventure] instant_damage 1 1
+
 execute if score match_time timer matches 36000 run tellraw @a "本局时间剩余 30 分钟"
 execute if score match_time timer matches 35960 run tellraw @a "本局时间剩余 30 分钟"
 execute if score match_time timer matches 35920 run tellraw @a "本局时间剩余 30 分钟"
@@ -57,3 +62,4 @@ function careerpvp:internal/internal_loc_spawn_ingame_tick
 function careerpvp:internal/internal_loc_respawn_ingame_tick
 function careerpvp:internal/internal_manabar
 function careerpvp:effect/effect_range_loop
+function careerpvp:mobs/mob_tick

@@ -7,6 +7,13 @@ scoreboard objectives add member dummy "队伍人数"
 scoreboard objectives remove setteam
 scoreboard objectives add setteam dummy
 
+scoreboard objectives remove career_dps
+scoreboard objectives add career_dps dummy
+scoreboard objectives remove career_tank
+scoreboard objectives add career_tank dummy
+scoreboard objectives remove career_support
+scoreboard objectives add career_support dummy
+
 team add 1
 team add 2
 team add 3

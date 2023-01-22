@@ -21,3 +21,4 @@ tellraw @p[tag=team_leave,distance=..10] "已离开先前的队伍并清除了�
 tag @a remove team_leave
 
 function careerpvp:team/update_members
+function careerpvp:player/update_career_type

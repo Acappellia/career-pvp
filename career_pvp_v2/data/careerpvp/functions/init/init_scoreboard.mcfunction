@@ -60,9 +60,13 @@ scoreboard objectives add killed_by_t15 killedByTeam.dark_gray
 scoreboard objectives add killed_by_t16 killedByTeam.black
 
 scoreboard objectives remove mobkill
-scoreboard objectives add mobkill minecraft.killed:chicken "只因击杀数"
-scoreboard objectives remove mobkill_inter
-scoreboard objectives add mobkill_inter minecraft.killed:chicken
+scoreboard objectives add mobkill dummy "怪物击杀数"
+scoreboard objectives remove mobkill_a
+scoreboard objectives add mobkill_a minecraft.killed:zombie_villager
+scoreboard objectives remove mobkill_b
+scoreboard objectives add mobkill_b minecraft.killed:zombie
+scoreboard objectives remove mobkill_c
+scoreboard objectives add mobkill_c minecraft.killed:fox
 
 scoreboard objectives remove int_val
 scoreboard objectives add int_val dummy
@@ -71,6 +75,8 @@ scoreboard objectives add timer dummy
 scoreboard players set revive_time int_val -601
 scoreboard players set start_delay int_val -201
 scoreboard players set match_time int_val 54001
+scoreboard players set mob_interval int_val 600
+scoreboard players set mob_interval timer 0 
 
 scoreboard objectives remove mana
 scoreboard objectives add mana dummy

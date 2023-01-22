@@ -17,6 +17,8 @@ execute as @a[scores={spec=1..}] run tp @s @r[team=!]
 
 tag @e[type=armor_stand,tag=spawn] add ingame
 tag @e[type=armor_stand,tag=respawn] add ingame
+tag @e[type=armor_stand,tag=mob_refresh] add ingame
+tag @e[type=armor_stand,tag=mapcenter] add ingame
 
 execute store result bossbar match_timer max run scoreboard players get match_time int_val
 scoreboard players operation match_time timer = match_time int_val

@@ -1,6 +1,8 @@
 tag @p[distance=..3,gamemode=!spectator] add choose_12
-execute as @p[distance=..20,tag=choose_12 ] at @s run execute as @e[tag=team] if score @s team = @p team if entity @s[tag=chosen_12] run tellraw @p "不可以选择与队友重复的职业"
-execute as @p[distance=..20,tag=choose_12 ] at @s run execute as @e[tag=team] if score @s team = @p team if entity @s[tag=chosen_12] run tag @p remove choose_12
+execute as @p[distance=..20,tag=choose_12 ] at @s unless score @s career matches 12 run execute as @e[tag=team] if score @s team = @p team if entity @s[tag=chosen_12] run tellraw @p "不可以选择与队友重复的职业"
+execute as @p[distance=..20,tag=choose_12 ] at @s unless score @s career matches 12 run execute as @e[tag=team] if score @s team = @p team if entity @s[tag=chosen_12] run tag @p remove choose_12
+execute as @p[distance=..20,tag=choose_12 ] at @s unless score @s career matches 12 run execute as @e[tag=team] if score @s team = @p team if score @s career_tank matches 1.. run tellraw @p "该类别职业已经达到上限。如需和队友更换，请先取消职业选择"
+execute as @p[distance=..20,tag=choose_12 ] at @s unless score @s career matches 12 run execute as @e[tag=team] if score @s team = @p team if score @s career_tank matches 1.. run tag @p remove choose_12
 clear @p[distance=..20,tag=choose_12 ] 
 scoreboard players set @p[distance=..20,tag=choose_12 ] give_item 12
 execute as @p[distance=..20,tag=choose_12,scores={career=2} ] at @s run execute as @e[tag=team] if score @s team = @p team run tag @s remove chosen_2
@@ -20,3 +22,5 @@ title @p[distance=..20,tag=choose_12 ] times 0 10 5
 title @p[distance=..20,tag=choose_12 ] subtitle ""
 title @p[distance=..20,tag=choose_12 ] title ""
 tag @a remove choose_12
+
+function careerpvp:player/update_career_type
