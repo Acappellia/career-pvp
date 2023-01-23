@@ -1,7 +1,7 @@
 scoreboard players operation start_delay timer = start_delay int_val
 tellraw @a "游戏即将开始。本局游戏中——"
 
-tellraw @a[team=!] ["您加入了队伍 ",{"score":{"name":"@s","objective":"team"}}]
+tellraw @a[team=!] ["您加入了队伍 ",{"score":{"name":"*","objective":"team"}}]
 tellraw @a[team=] "您未加入任何队伍，将开始观战"
 tellraw @a[team=,gamemode=creative] "您作为活动管理员，不会受到传送影响。"
 tellraw @a[team=!,scores={career=1}] "您选择了初始职业 奥术法师"
