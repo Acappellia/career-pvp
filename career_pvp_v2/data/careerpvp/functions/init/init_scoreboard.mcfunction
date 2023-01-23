@@ -91,7 +91,11 @@ scoreboard players set revive_time int_val -601
 scoreboard players set start_delay int_val -201
 scoreboard players set match_time int_val 54001
 scoreboard players set mob_interval int_val 600
-scoreboard players set mob_interval timer 0 
+scoreboard players set mob_interval timer 0
+scoreboard players set match_count int_val 0
+scoreboard players set show_cutscene int_val 1
+scoreboard players set cutscene int_val -1301
+scoreboard players set cutscene timer 1
 
 scoreboard objectives remove mana
 scoreboard objectives add mana dummy

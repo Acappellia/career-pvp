@@ -5,8 +5,10 @@ tag @a[gamemode=!adventure] add spec
 tag @a[gamemode=adventure] remove spec
 kill @e[type=item]
 scoreboard players add start_delay timer 1
+scoreboard players add cutscene timer 1
 execute store result bossbar match_timer value run scoreboard players remove match_time timer 1
 execute as @e[type=armor_stand, tag=spawn, tag=ingame] run bossbar set match_timer players @a
+execute if score show_cutscene int_val matches 1.. if score cutscene timer matches ..-1 run function careerpvp:cutscene/tick_cutscene
 
 execute if score start_delay timer matches -200..-181 run title @a title "10"
 execute if score start_delay timer matches -180..-161 run title @a title "9"
@@ -19,12 +21,8 @@ execute if score start_delay timer matches -60..-41 run title @a title "3"
 execute if score start_delay timer matches -40..-21 run title @a title "2"
 execute if score start_delay timer matches -20..-2 run title @a title "1"
 execute if score start_delay timer matches -1 run tellraw @a "本局游戏开始"
-execute if score start_delay timer matches -1 run function careerpvp:game/game_start
-
-execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run title @a[team=!,distance=197..,gamemode=adventure] actionbar "即将离开地图边界，请返回地图作战区域！"
-execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run effect give @a[team=!,distance=210..,gamemode=adventure] slowness 1 2
-execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run effect give @a[team=!,distance=215..,gamemode=adventure] wither 1 9
-execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run effect give @a[team=!,distance=225..,gamemode=adventure] instant_damage 1 1
+execute if score start_delay timer matches -1 if score show_cutscene int_val matches ..0 run function careerpvp:game/game_start
+execute if score start_delay timer matches -1 if score show_cutscene int_val matches 1.. run function careerpvp:cutscene/cutscene_start
 
 execute if score match_time timer matches 36000 run tellraw @a "本局时间剩余 30 分钟"
 execute if score match_time timer matches 35960 run tellraw @a "本局时间剩余 30 分钟"
@@ -65,3 +63,8 @@ function careerpvp:internal/internal_manabar
 function careerpvp:effect/effect_range_loop
 function careerpvp:mobs/mob_tick
 function careerpvp:advancements/tick_advancement_revoke
+
+execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run title @a[tag=!dead,team=!,distance=197..,gamemode=adventure] actionbar "即将离开地图边界，请返回地图作战区域！"
+execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run effect give @a[tag=!dead,team=!,distance=210..,gamemode=adventure] slowness 1 2
+execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run effect give @a[tag=!dead,team=!,distance=215..,gamemode=adventure] wither 1 9
+execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run effect give @a[tag=!dead,team=!,distance=225..,gamemode=adventure] instant_damage 1 1
