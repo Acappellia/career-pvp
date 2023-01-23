@@ -14,7 +14,7 @@ advancement revoke @s only careerpvp:left_ok
 advancement revoke @s only careerpvp:right_ok
 advancement revoke @s only careerpvp:jumppad_ok
 
-execute at @e[type=armor_stand,tag=mapcenter] run spreadplayers ~ ~ 20 180 true @a[team=!]
+execute at @e[type=armor_stand,tag=mapcenter] run spreadplayers ~ ~ 15 160 true @a[team=!]
 
 clear @a[team=,gamemode=!creative]
 scoreboard players set @a[team=,gamemode=!creative] spec 1
