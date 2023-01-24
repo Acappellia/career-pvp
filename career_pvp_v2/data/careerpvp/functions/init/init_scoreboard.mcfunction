@@ -72,8 +72,6 @@ scoreboard objectives add mobkill_c minecraft.killed:fox
 
 scoreboard objectives remove mobkilled
 scoreboard objectives add mobkilled dummy "被怪物击杀次数"
-scoreboard objectives remove mobkilled_int
-scoreboard objectives add mobkilled_int dummy "被怪物击杀次数"
 scoreboard objectives remove killed_by_iron
 scoreboard objectives add killed_by_iron minecraft.killed_by:iron_golem
 scoreboard objectives remove killed_by_aa
@@ -96,6 +94,16 @@ scoreboard players set match_count int_val 0
 scoreboard players set show_cutscene int_val 1
 scoreboard players set cutscene int_val -1301
 scoreboard players set cutscene timer 1
+scoreboard players set ingame int_val 0
+scoreboard players set show_effect_range int_val 1
+scoreboard players set show_cd_advancement int_val 1
+scoreboard players set spawn_mobs int_val 1
+scoreboard players set show_manabar int_val 1
+scoreboard players set tick_item int_val 1
+scoreboard players set allow_jumppad int_val 1
+scoreboard players set priest_int int_val 19
+scoreboard objectives remove kill_score
+scoreboard objectives add kill_score dummy 
 
 scoreboard objectives remove mana
 scoreboard objectives add mana dummy
@@ -109,6 +117,8 @@ scoreboard objectives remove jumppad_timer
 scoreboard objectives add jumppad_timer minecraft.custom:time_since_death
 scoreboard objectives remove death_timer
 scoreboard objectives add death_timer minecraft.custom:time_since_death
+scoreboard objectives remove jumppad_cd
+scoreboard objectives add jumppad_cd minecraft.custom:time_since_death
 
 bossbar add match_timer "本局游戏剩余时间"
 bossbar set match_timer color blue

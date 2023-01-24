@@ -22,7 +22,7 @@ effect give @a minecraft:instant_health 1 9
 
 clear @a[gamemode=!creative]
 
-tag @e[type=armor_stand] remove ingame
+scoreboard players set ingame int_val 0
 
 tag @a remove death_career_select
 tag @a remove dead
@@ -38,3 +38,11 @@ gamemode adventure @a[gamemode=!creative]
 
 gamerule sendCommandFeedback true
 scoreboard players set match_end int_val 1
+
+# extra
+scoreboard players set @a witch_ultstack 0
+scoreboard players set @a archer_rightcharge 0
+kill @e[type=minecraft:iron_golem,tag=!toastModel]
+kill @e[type=minecraft:zombie]
+kill @e[type=minecraft:zombie_villager]
+kill @e[type=minecraft:fox]

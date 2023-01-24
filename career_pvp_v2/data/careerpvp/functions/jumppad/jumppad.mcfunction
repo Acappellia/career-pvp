@@ -1,0 +1,6 @@
+scoreboard players set @s +alt_vector_face 1300
+scoreboard players set @s +alt_vector_y 1100
+playsound minecraft:entity.wither.shoot master @a ~ ~ ~ 0.5 0.5
+particle minecraft:cloud ~ ~0.1 ~ 0 0 0 0.1 20
+scoreboard players set @s jumppad_cd -100
+effect give @s minecraft:hero_of_the_village 5 0 true

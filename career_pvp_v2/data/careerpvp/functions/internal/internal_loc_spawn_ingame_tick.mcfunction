@@ -1,5 +1,5 @@
-execute at @e[type=armor_stand, tag=spawn, tag=ingame] run tag @a[team=,distance=..10,gamemode=!creative] add login_spec
-execute at @e[type=armor_stand, tag=spawn, tag=ingame] run tag @a[team=!,distance=..10,gamemode=!creative] add revive_or_rejoin
+tag @a[team=,distance=..10,gamemode=!creative] add login_spec
+tag @a[team=!,distance=..10,gamemode=!creative] add revive_or_rejoin
 
 scoreboard players set @a[tag=login_spec] spec 1
 tp @a[tag=login_spec] @r[tag=!dead,team=!]
@@ -14,4 +14,4 @@ title @a[tag=revive_or_rejoin] title ""
 tag @a remove login_spec
 tag @a remove revive_or_rejoin
 
-execute at @e[type=armor_stand, tag=spawn, tag=ingame] run tag @a[distance=..10] remove death_career_select
+tag @a[distance=..10] remove death_career_select

@@ -14,16 +14,16 @@ execute if score start_delay timer matches -200..-1 run function careerpvp:game/
 execute if score match_time timer matches 1.. run function careerpvp:game/stop_timer 
 
 function careerpvp:internal/internal_update_teammate_tick
-function careerpvp:internal/internal_player_kill_tick
-function careerpvp:internal/internal_revive_countdown_tick
-function careerpvp:internal/internal_loc_spawn_ingame_tick
-function careerpvp:internal/internal_loc_respawn_ingame_tick
-function careerpvp:internal/internal_manabar
-function careerpvp:effect/effect_range_loop
-function careerpvp:mobs/mob_tick
-function careerpvp:advancements/tick_advancement_revoke
 
-execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run title @a[tag=!dead,team=!,distance=197..,gamemode=adventure] actionbar {"text":"即将离开地图边界，请返回地图作战区域！","color":"red"}
-execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run effect give @a[tag=!dead,team=!,distance=210..,gamemode=adventure] slowness 1 2
-execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run effect give @a[tag=!dead,team=!,distance=215..,gamemode=adventure] wither 1 9
-execute at @e[type=armor_stand, tag=mapcenter, tag=ingame] run effect give @a[tag=!dead,team=!,distance=225..,gamemode=adventure] instant_damage 1 1
+execute as @a[scores={kill_inter=1..}] at @s run function careerpvp:internal/internal_player_kill_tick
+execute as @a[scores={death_inter=1..}] at @s run function careerpvp:internal/internal_player_death_tick
+execute as @a[tag=dead] at @s run function careerpvp:internal/tick_revive_countdown
+function careerpvp:internal/tick_functional
+
+execute if score tick_item int_val matches 1.. run function careerpvp:rpgitem/tick_item
+execute if score allow_jumppad int_val matches 1.. run function careerpvp:jumppad/tick_jumppad
+execute if score show_manabar int_val matches 1.. run function careerpvp:internal/internal_manabar
+execute if score show_effect_range int_val matches 1.. run function careerpvp:effect/effect_range_loop
+execute if score show_cd_advancement int_val matches 1.. run function careerpvp:advancements/tick_advancement_revoke
+
+execute if score ingame int_val matches 1 run function careerpvp:game/tick_ingame

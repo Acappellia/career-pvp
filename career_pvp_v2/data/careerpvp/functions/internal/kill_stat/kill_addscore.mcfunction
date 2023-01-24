@@ -1,0 +1,16 @@
+execute as @s[team=1] run scoreboard players operation Team.1 score += @s kill_score
+execute as @s[team=2] run scoreboard players operation Team.2 score += @s kill_score
+execute as @s[team=3] run scoreboard players operation Team.3 score += @s kill_score
+execute as @s[team=4] run scoreboard players operation Team.4 score += @s kill_score
+execute as @s[team=5] run scoreboard players operation Team.5 score += @s kill_score
+execute as @s[team=6] run scoreboard players operation Team.6 score += @s kill_score
+execute as @s[team=7] run scoreboard players operation Team.7 score += @s kill_score
+execute as @s[team=8] run scoreboard players operation Team.8 score += @s kill_score
+execute as @s[team=9] run scoreboard players operation Team.9 score += @s kill_score
+execute as @s[team=10] run scoreboard players operation Team.10 score += @s kill_score
+execute as @s[team=11] run scoreboard players operation Team.11 score += @s kill_score
+execute as @s[team=12] run scoreboard players operation Team.12 score += @s kill_score
+execute as @s[team=13] run scoreboard players operation Team.13 score += @s kill_score
+execute as @s[team=14] run scoreboard players operation Team.14 score += @s kill_score
+execute as @s[team=15] run scoreboard players operation Team.15 score += @s kill_score
+execute as @s[team=16] run scoreboard players operation Team.16 score += @s kill_score

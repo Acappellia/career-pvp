@@ -67,3 +67,14 @@ scoreboard objectives remove mobkill_b
 scoreboard objectives add mobkill_b minecraft.killed:zombie
 scoreboard objectives remove mobkill_c
 scoreboard objectives add mobkill_c minecraft.killed:fox
+
+scoreboard objectives remove mobkilled
+scoreboard objectives add mobkilled dummy "被怪物击杀次数"
+scoreboard objectives remove killed_by_iron
+scoreboard objectives add killed_by_iron minecraft.killed_by:iron_golem
+scoreboard objectives remove killed_by_aa
+scoreboard objectives add killed_by_a minecraft.killed_by:zombie_villager
+scoreboard objectives remove killed_by_b
+scoreboard objectives add killed_by_b minecraft.killed_by:zombie
+scoreboard objectives remove killed_by_c
+scoreboard objectives add killed_by_c minecraft.killed_by:fox
