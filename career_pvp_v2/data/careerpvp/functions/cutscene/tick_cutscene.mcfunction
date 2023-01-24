@@ -2,7 +2,9 @@ gamemode spectator @a[gamemode=!creative]
 effect give @a[gamemode=!creative] slowness 1 1 true
 execute as @a[gamemode=!creative] run spectate @e[tag=cutscene,limit=1]
 
-execute if score cutscene timer matches -1300 run tp @e[tag=cutscene] -13 18 160 -132.5 -8.3
+execute if score cutscene timer matches -1300 run tp @e[tag=cutscene] -13 20 160 -132.5 -8.3
+execute if score cutscene timer matches -1300 run tp @a[gamemode=!creative] @e[tag=cutscene,limit=1]
+execute if score cutscene timer matches -1300..-1081 as @e[tag=cutscene] at @s run tp @s ~ ~0.05 ~
 execute if score cutscene timer matches -1280 run title @a[gamemode=!creative] times 10 40 10
 execute if score cutscene timer matches -1280 run title @a[gamemode=!creative] subtitle {"text":"佩戴耳机以获得更好体验","color":"blue"}
 execute if score cutscene timer matches -1280 run title @a[gamemode=!creative] title {"text":"d¯b","color":"light_purple"}
@@ -11,12 +13,16 @@ execute if score cutscene timer matches -1200 run title @a[gamemode=!creative] t
 execute if score cutscene timer matches -1200 run title @a[gamemode=!creative] subtitle {"text":"呈  献","color":"white"}
 execute if score cutscene timer matches -1200 run title @a[gamemode=!creative] title {"text":"NyaaCat Community","color":"red"}
 
-execute if score cutscene timer matches -1080 run tp @e[tag=cutscene] 12 16 47 134.4 -30.7
+execute if score cutscene timer matches -1080 run tp @e[tag=cutscene] 12 18 47 134.4 -30.7
+execute if score cutscene timer matches -1080 run tp @a[gamemode=!creative] @e[tag=cutscene,limit=1]
+execute if score cutscene timer matches -1080..-961 as @e[tag=cutscene] at @s run tp @s ~ ~0.05 ~
 execute if score cutscene timer matches -1080 run title @a[gamemode=!creative] times 20 80 20
 execute if score cutscene timer matches -1080 run title @a[gamemode=!creative] subtitle {"text":"- Epic of Illusia -","color":"white"}
 execute if score cutscene timer matches -1080 run title @a[gamemode=!creative] title {"text":"✡  幻  境  战  记  ✡","color":"blue"}
 
-execute if score cutscene timer matches -960 run tp @e[tag=cutscene] -27 30 127 146.4 13.7
+execute if score cutscene timer matches -960 run tp @e[tag=cutscene] -27 32 127 146.4 13.7
+execute if score cutscene timer matches -960 run tp @a[gamemode=!creative] @e[tag=cutscene,limit=1]
+execute if score cutscene timer matches -960..-821 as @e[tag=cutscene] at @s run tp @s ~ ~-0.05 ~
 execute if score cutscene timer matches -960 run title @a[gamemode=!creative] times 20 50 20
 execute if score cutscene timer matches -960 run title @a[gamemode=!creative] subtitle {"text":"Ran_nano","color":"yellow"}
 execute if score cutscene timer matches -960 run title @a[gamemode=!creative] title {"text":"- 技术/插件 -","color":"gold"}
@@ -24,12 +30,16 @@ execute if score cutscene timer matches -890 run title @a[gamemode=!creative] ti
 execute if score cutscene timer matches -890 run title @a[gamemode=!creative] subtitle {"text":"langua","color":"yellow"}
 execute if score cutscene timer matches -890 run title @a[gamemode=!creative] title {"text":"- 技术/插件 -","color":"gold"}
 
-execute if score cutscene timer matches -820 run tp @e[tag=cutscene] 0 23 -65 178.9 -18.1
+execute if score cutscene timer matches -820 run tp @e[tag=cutscene] 0 25 -65 178.9 -18.1
+execute if score cutscene timer matches -820 run tp @a[gamemode=!creative] @e[tag=cutscene,limit=1]
+execute if score cutscene timer matches -820..-701 as @e[tag=cutscene] at @s run tp @s ~ ~ ~-0.15
 execute if score cutscene timer matches -820 run title @a[gamemode=!creative] times 20 80 20
 execute if score cutscene timer matches -820 run title @a[gamemode=!creative] subtitle {"text":"ABraHam_Sid","color":"yellow"}
 execute if score cutscene timer matches -820 run title @a[gamemode=!creative] title {"text":"- 地图规划/美术 -","color":"gold"}
 
-execute if score cutscene timer matches -700 run tp @e[tag=cutscene] -183 8 59 -148.0 -19.1
+execute if score cutscene timer matches -700 run tp @e[tag=cutscene] -183 10 59 -148.0 -19.1
+execute if score cutscene timer matches -700 run tp @a[gamemode=!creative] @e[tag=cutscene,limit=1]
+execute if score cutscene timer matches -700..-501 as @e[tag=cutscene] at @s run tp @s ^ ^ ^0.1
 execute if score cutscene timer matches -700 run title @a[gamemode=!creative] times 20 40 20
 execute if score cutscene timer matches -700 run title @a[gamemode=!creative] subtitle {"text":"KengDie3","color":"yellow"}
 execute if score cutscene timer matches -700 run title @a[gamemode=!creative] title {"text":"- 建筑 -","color":"gold"}
@@ -42,6 +52,8 @@ execute if score cutscene timer matches -560 run title @a[gamemode=!creative] su
 execute if score cutscene timer matches -560 run title @a[gamemode=!creative] title {"text":"- 建筑 -","color":"gold"}
 
 execute if score cutscene timer matches -500 run tp @e[tag=cutscene] 84 27 -66 136.4 -27.2
+execute if score cutscene timer matches -500 run tp @a[gamemode=!creative] @e[tag=cutscene,limit=1]
+execute if score cutscene timer matches -500..-361 as @e[tag=cutscene] at @s run tp @s ~ ~-0.02 ~
 execute if score cutscene timer matches -500 run title @a[gamemode=!creative] times 20 50 20
 execute if score cutscene timer matches -500 run title @a[gamemode=!creative] subtitle {"text":"Asakura_kukii","color":"yellow"}
 execute if score cutscene timer matches -500 run title @a[gamemode=!creative] title {"text":"- 测试 -","color":"gold"}
@@ -49,12 +61,15 @@ execute if score cutscene timer matches -430 run title @a[gamemode=!creative] ti
 execute if score cutscene timer matches -430 run title @a[gamemode=!creative] subtitle [{"text":"Aqua_lyy","color":"yellow"},{"text":" / ","color":"white"},{"text":"Aqua_bz","color":"yellow"}]
 execute if score cutscene timer matches -430 run title @a[gamemode=!creative] title {"text":"- 测试 -","color":"gold"}
 
-execute if score cutscene timer matches -360 run tp @e[tag=cutscene] -13 18 160 -132.5 -8.3
+execute if score cutscene timer matches -360 run tp @e[tag=cutscene] -2 21 10 -164.9 3.1
+execute if score cutscene timer matches -360 run tp @a[gamemode=!creative] @e[tag=cutscene,limit=1]
+execute if score cutscene timer matches -360..-241 as @e[tag=cutscene] at @s run tp @s ^ ^-0.005 ^
 execute if score cutscene timer matches -360 run title @a[gamemode=!creative] times 20 80 20
 execute if score cutscene timer matches -360 run title @a[gamemode=!creative] subtitle {"text":"ToastBrand","color":"yellow"}
 execute if score cutscene timer matches -360 run title @a[gamemode=!creative] title {"text":"- 总策划 -","color":"gold"}
 
 execute if score cutscene timer matches -240 run tp @e[tag=cutscene] 0 18 119 -180 0
+execute if score cutscene timer matches -240 run tp @a[gamemode=!creative] @e[tag=cutscene,limit=1]
 execute if score cutscene timer matches -240..-2 as @e[tag=cutscene] at @s run tp @s ~ ~ ~-0.15
 execute if score cutscene timer matches -240 run title @a[gamemode=!creative] times 20 40 20
 execute if score cutscene timer matches -240 run title @a[gamemode=!creative] subtitle ""
