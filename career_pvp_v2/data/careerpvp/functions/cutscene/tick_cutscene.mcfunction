@@ -37,6 +37,7 @@ execute if score cutscene timer matches -820 run title @a[gamemode=!creative] ti
 execute if score cutscene timer matches -820 run title @a[gamemode=!creative] subtitle {"text":"ABraHam_Sid","color":"yellow"}
 execute if score cutscene timer matches -820 run title @a[gamemode=!creative] title {"text":"- 地图规划/美术 -","color":"gold"}
 
+execute if score cutscene timer matches -701 run tp @e[tag=cutscene] -60 10 0
 execute if score cutscene timer matches -700 run tp @e[tag=cutscene] -183 10 59 -148.0 -19.1
 execute if score cutscene timer matches -700 run tp @a[gamemode=!creative] @e[tag=cutscene,limit=1]
 execute if score cutscene timer matches -700..-501 as @e[tag=cutscene] at @s run tp @s ^ ^ ^0.1
@@ -51,6 +52,7 @@ execute if score cutscene timer matches -600 run title @a[gamemode=!creative] ti
 execute if score cutscene timer matches -560 run title @a[gamemode=!creative] subtitle {"text":"reebing","color":"yellow"}
 execute if score cutscene timer matches -560 run title @a[gamemode=!creative] title {"text":"- 建筑 -","color":"gold"}
 
+execute if score cutscene timer matches -501 run tp @e[tag=cutscene] -60 27 0
 execute if score cutscene timer matches -500 run tp @e[tag=cutscene] 84 27 -66 136.4 -27.2
 execute if score cutscene timer matches -500 run tp @a[gamemode=!creative] @e[tag=cutscene,limit=1]
 execute if score cutscene timer matches -500..-361 as @e[tag=cutscene] at @s run tp @s ~ ~-0.02 ~
