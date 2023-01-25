@@ -9,3 +9,8 @@ title @s[scores={death_cd=20..,alchemist_ult=-40..-21}] subtitle [{"text":"00000
 title @s[scores={death_cd=20..,alchemist_ult=-20..-1}] subtitle [{"text":"0000000","color":"gray"},{"text":"0","color":"green","obfuscated":true},{"text":" >        < ","color":"dark_green","obfuscated":false},{"text":"0","color":"green","obfuscated":true},{"text":"0000000","color":"gray","obfuscated":false}]
 title @s[scores={death_cd=20..,alchemist_ult=0}] subtitle [{"text":"00000000","color":"gray"},{"text":" >        < ","color":"gray","obfuscated":false},{"text":"00000000","color":"gray","obfuscated":false}]
 title @s[scores={death_cd=20..,alchemist_ult=..0}] title ""
+
+#alchemist sneak
+execute as @s[tag=alchemist_sneak] at @s run execute as @a[distance=..3] if score @s team = @p team run effect give @s minecraft:instant_health 1 0 true
+execute as @s[tag=alchemist_sneak] at @s run execute as @a[distance=..3] unless score @s team = @p team run effect give @s minecraft:poison 5 0 true
+tag @s remove alchemist_sneak

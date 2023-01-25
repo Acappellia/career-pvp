@@ -85,9 +85,9 @@ scoreboard objectives remove int_val
 scoreboard objectives add int_val dummy
 scoreboard objectives remove timer
 scoreboard objectives add timer dummy
-scoreboard players set revive_time int_val -601
+scoreboard players set revive_time int_val -501
 scoreboard players set start_delay int_val -201
-scoreboard players set match_time int_val 54001
+scoreboard players set match_time int_val 48001
 scoreboard players set mob_interval int_val 600
 scoreboard players set mob_interval timer 0
 scoreboard players set match_count int_val 0
