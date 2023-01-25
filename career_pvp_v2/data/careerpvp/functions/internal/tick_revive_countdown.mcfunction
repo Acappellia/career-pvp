@@ -1,5 +1,5 @@
-title @s subtitle ""
-title @s title ""
+title @s[scores={death_cd=..0}] subtitle ""
+title @s[scores={death_cd=..0}] title ""
 
 execute if score @s death_cd matches -600 run title @s actionbar [{"text":"等待重生中，剩余 ","color":"yellow"},{"text":"30 ","color":"aqua"},{"text":"秒","color":"yellow"}]
 execute if score @s death_cd matches -580 run title @s actionbar [{"text":"等待重生中，剩余 ","color":"yellow"},{"text":"29 ","color":"aqua"},{"text":"秒","color":"yellow"}]

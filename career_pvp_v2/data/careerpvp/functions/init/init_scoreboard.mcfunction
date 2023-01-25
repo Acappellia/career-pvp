@@ -103,7 +103,15 @@ scoreboard players set tick_item int_val 1
 scoreboard players set allow_jumppad int_val 1
 scoreboard players set priest_int int_val 19
 scoreboard objectives remove kill_score
-scoreboard objectives add kill_score dummy 
+scoreboard objectives add kill_score dummy
+
+scoreboard players set #128 int_val 128
+scoreboard players set #64 int_val 64
+scoreboard players set #32 int_val 32
+scoreboard players set #16 int_val 16
+scoreboard players set #8 int_val 8
+scoreboard players set #4 int_val 4
+scoreboard players set #2 int_val 2
 
 scoreboard objectives remove mana
 scoreboard objectives add mana dummy
