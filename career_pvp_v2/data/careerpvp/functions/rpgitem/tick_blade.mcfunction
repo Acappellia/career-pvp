@@ -1,3 +1,8 @@
+execute as @s[tag=!dead] if score ingame int_val matches 1.. run scoreboard players add @s all_ultcharge 24
+execute if score @s all_ultcharge matches 72000..100000 run advancement grant @s only careerpvp:ult_ok_blade
+execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100000
+function careerpvp:rpgitem/ultimatebar
+
 #blade ult
 scoreboard players set @s[scores={blade_ult=-30}] +alt_vector_face 900
 scoreboard players set @s[scores={blade_ult=-30}] +alt_vector_y 600

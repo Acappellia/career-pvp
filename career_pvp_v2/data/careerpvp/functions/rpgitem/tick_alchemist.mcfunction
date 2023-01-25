@@ -1,3 +1,8 @@
+execute as @s[tag=!dead] if score ingame int_val matches 1.. run scoreboard players add @s all_ultcharge 24
+execute if score @s all_ultcharge matches 72000..100000 run advancement grant @s only careerpvp:ult_ok_alchemist
+execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100000
+function careerpvp:rpgitem/ultimatebar
+
 #alchemist ult
 title @s[scores={death_cd=20..,alchemist_ult=-160..-141}] subtitle [{"text":"00000000","color":"green","obfuscated":true},{"text":" >        < ","color":"dark_green","obfuscated":false},{"text":"00000000","color":"green","obfuscated":true}]
 title @s[scores={death_cd=20..,alchemist_ult=-140..-121}] subtitle [{"text":"0","color":"gray"},{"text":"0000000","color":"green","obfuscated":true},{"text":" >        < ","color":"dark_green","obfuscated":false},{"text":"0000000","color":"green","obfuscated":true},{"text":"0","color":"gray","obfuscated":false}]

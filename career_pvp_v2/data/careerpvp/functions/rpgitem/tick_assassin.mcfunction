@@ -1,3 +1,8 @@
+execute as @s[tag=!dead] if score ingame int_val matches 1.. run scoreboard players add @s all_ultcharge 24
+execute if score @s all_ultcharge matches 72000..100000 run advancement grant @s only careerpvp:ult_ok_assassin
+execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100000
+function careerpvp:rpgitem/ultimatebar
+
 #assassin hide effect
 title @s[scores={death_cd=20..,assassin_hide=..-140}] subtitle [{"text":"‖ ‖ ‖ Λ ‖ ‖ ‖ ","color":"gray"},{"text":"<        >","color":"dark_gray"},{"text":" ‖ ‖ ‖ Λ ‖ ‖ ‖","color":"gray"}]
 title @s[scores={death_cd=20..,assassin_hide=-139..-120}] subtitle [{"text":"‖ ‖ ‖ Λ ‖ ‖ ","color":"gray"},{"text":"‖ ","color":"dark_gray"},{"text":"<        >","color":"dark_gray"},{"text":" ‖","color":"dark_gray"},{"text":" ‖ ‖ Λ ‖ ‖ ‖","color":"gray"}]

@@ -1,5 +1,4 @@
 {
-    "parent": "minecraft:story/root",
     "criteria": {
         "unluck_timeover": {
             "trigger": "minecraft:effects_changed",

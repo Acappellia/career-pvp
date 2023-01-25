@@ -5,3 +5,5 @@ execute if score tmp int_val matches 1 run function careerpvp:game/game_ready
 
 execute if score tmp int_val matches 0 run scoreboard players set start_delay timer 0 
 execute if score tmp int_val matches 0 run tellraw @a "游戏准备中止"
+
+function careerpvp:rpgitem/init_bossbar

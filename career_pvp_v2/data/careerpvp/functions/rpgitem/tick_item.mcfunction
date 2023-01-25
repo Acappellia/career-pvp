@@ -18,55 +18,23 @@ execute as @e[type=minecraft:armor_stand,tag=defender_ult] at @s unless entity @
 scoreboard players set @e[tag=token,tag=defender_ult] eff_r8 -160
 
 #druit ult
-execute as @e[type=iron_golem,tag=druid_golem,team=1] run bossbar set minecraft:druid_golemhealth_1 players @a[team=1]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=1] run bossbar set minecraft:druid_golemhealth_1 players
-execute store result bossbar minecraft:druid_golemhealth_1 value run data get entity @e[type=iron_golem,tag=druid_golem,team=1,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=2] run bossbar set minecraft:druid_golemhealth_2 players @a[team=2]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=2] run bossbar set minecraft:druid_golemhealth_2 players
-execute store result bossbar minecraft:druid_golemhealth_2 value run data get entity @e[type=iron_golem,tag=druid_golem,team=2,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=3] run bossbar set minecraft:druid_golemhealth_3 players @a[team=3]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=3] run bossbar set minecraft:druid_golemhealth_3 players
-execute store result bossbar minecraft:druid_golemhealth_3 value run data get entity @e[type=iron_golem,tag=druid_golem,team=3,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=4] run bossbar set minecraft:druid_golemhealth_4 players @a[team=4]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=4] run bossbar set minecraft:druid_golemhealth_4 players
-execute store result bossbar minecraft:druid_golemhealth_4 value run data get entity @e[type=iron_golem,tag=druid_golem,team=4,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=5] run bossbar set minecraft:druid_golemhealth_5 players @a[team=5]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=5] run bossbar set minecraft:druid_golemhealth_5 players
-execute store result bossbar minecraft:druid_golemhealth_5 value run data get entity @e[type=iron_golem,tag=druid_golem,team=5,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=6] run bossbar set minecraft:druid_golemhealth_6 players @a[team=6]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=6] run bossbar set minecraft:druid_golemhealth_6 players
-execute store result bossbar minecraft:druid_golemhealth_6 value run data get entity @e[type=iron_golem,tag=druid_golem,team=6,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=7] run bossbar set minecraft:druid_golemhealth_7 players @a[team=7]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=7] run bossbar set minecraft:druid_golemhealth_7 players
-execute store result bossbar minecraft:druid_golemhealth_7 value run data get entity @e[type=iron_golem,tag=druid_golem,team=7,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=8] run bossbar set minecraft:druid_golemhealth_8 players @a[team=8]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=8] run bossbar set minecraft:druid_golemhealth_8 players
-execute store result bossbar minecraft:druid_golemhealth_8 value run data get entity @e[type=iron_golem,tag=druid_golem,team=8,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=9] run bossbar set minecraft:druid_golemhealth_9 players @a[team=9]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=9] run bossbar set minecraft:druid_golemhealth_9 players
-execute store result bossbar minecraft:druid_golemhealth_9 value run data get entity @e[type=iron_golem,tag=druid_golem,team=9,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=10] run bossbar set minecraft:druid_golemhealth_10 players @a[team=10]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=10] run bossbar set minecraft:druid_golemhealth_10 players
-execute store result bossbar minecraft:druid_golemhealth_10 value run data get entity @e[type=iron_golem,tag=druid_golem,team=10,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=11] run bossbar set minecraft:druid_golemhealth_11 players @a[team=11]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=11] run bossbar set minecraft:druid_golemhealth_11 players
-execute store result bossbar minecraft:druid_golemhealth_11 value run data get entity @e[type=iron_golem,tag=druid_golem,team=11,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=12] run bossbar set minecraft:druid_golemhealth_12 players @a[team=12]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=12] run bossbar set minecraft:druid_golemhealth_12 players
-execute store result bossbar minecraft:druid_golemhealth_12 value run data get entity @e[type=iron_golem,tag=druid_golem,team=12,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=13] run bossbar set minecraft:druid_golemhealth_13 players @a[team=13]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=13] run bossbar set minecraft:druid_golemhealth_13 players
-execute store result bossbar minecraft:druid_golemhealth_13 value run data get entity @e[type=iron_golem,tag=druid_golem,team=13,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=14] run bossbar set minecraft:druid_golemhealth_14 players @a[team=14]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=14] run bossbar set minecraft:druid_golemhealth_14 players
-execute store result bossbar minecraft:druid_golemhealth_14 value run data get entity @e[type=iron_golem,tag=druid_golem,team=14,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=15] run bossbar set minecraft:druid_golemhealth_15 players @a[team=15]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=15] run bossbar set minecraft:druid_golemhealth_15 players
-execute store result bossbar minecraft:druid_golemhealth_15 value run data get entity @e[type=iron_golem,tag=druid_golem,team=15,limit=1] Health 1
-execute as @e[type=iron_golem,tag=druid_golem,team=16] run bossbar set minecraft:druid_golemhealth_16 players @a[team=16]
-execute unless entity @e[type=iron_golem,tag=druid_golem,team=16] run bossbar set minecraft:druid_golemhealth_16 players
-execute store result bossbar minecraft:druid_golemhealth_16 value run data get entity @e[type=iron_golem,tag=druid_golem,team=16,limit=1] Health 1
-execute as @e[type=minecraft:iron_golem,tag=druid_golem] at @s run execute as @a if score @s team = @e[type=minecraft:iron_golem,sort=nearest,limit=1] team run function careerpvp:rpgitem/druid_ult
+bossbar set minecraft:druid_golemhealth_1 players
+bossbar set minecraft:druid_golemhealth_2 players
+bossbar set minecraft:druid_golemhealth_3 players
+bossbar set minecraft:druid_golemhealth_4 players
+bossbar set minecraft:druid_golemhealth_5 players
+bossbar set minecraft:druid_golemhealth_6 players
+bossbar set minecraft:druid_golemhealth_7 players
+bossbar set minecraft:druid_golemhealth_8 players
+bossbar set minecraft:druid_golemhealth_9 players
+bossbar set minecraft:druid_golemhealth_10 players
+bossbar set minecraft:druid_golemhealth_11 players
+bossbar set minecraft:druid_golemhealth_12 players
+bossbar set minecraft:druid_golemhealth_13 players
+bossbar set minecraft:druid_golemhealth_14 players
+bossbar set minecraft:druid_golemhealth_15 players
+bossbar set minecraft:druid_golemhealth_16 players
+execute as @e[type=iron_golem,tag=druid_golem] run function careerpvp:rpgitem/tick_xiaoye
 
 #assassin right reset speed
 execute as @e[tag=assassin_rmarker] at @s run execute as @a[scores={assassin_right=..0},distance=2..] if score @s team = @e[tag=assassin_rmarker,sort=nearest,limit=1] setteam run scoreboard players set @s +alt_vector_bypct 1

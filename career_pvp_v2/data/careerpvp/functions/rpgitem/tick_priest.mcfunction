@@ -1,3 +1,8 @@
+execute as @s[tag=!dead] if score ingame int_val matches 1.. run scoreboard players add @s all_ultcharge 20
+execute if score @s all_ultcharge matches 72000..100000 run advancement grant @s only careerpvp:ult_ok_priest
+execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100000
+function careerpvp:rpgitem/ultimatebar
+
 #priest sneak
 execute as @s[scores={priest_sneak=-1}] at @s run execute as @a[distance=..8] if score @s team = @p team run effect give @s minecraft:instant_health 1 1
 execute as @s[scores={priest_sneak=-1}] at @s run playsound minecraft:block.beacon.power_select master @a ~ ~ ~ 1 1.5

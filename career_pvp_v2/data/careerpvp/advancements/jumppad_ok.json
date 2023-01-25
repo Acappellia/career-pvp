@@ -1,5 +1,4 @@
 {
-    "parent": "minecraft:story/root",
     "criteria": {
         "hero_timeover": {
             "trigger": "minecraft:effects_changed",

@@ -1,3 +1,8 @@
+execute as @s[tag=!dead] if score ingame int_val matches 1.. run scoreboard players add @s all_ultcharge 15
+execute if score @s all_ultcharge matches 72000..100000 run advancement grant @s only careerpvp:ult_ok_sorcerer
+execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100000
+function careerpvp:rpgitem/ultimatebar
+
 #sorcerer_ult
 title @s[scores={death_cd=20..,sorcerer_ult=-60}] subtitle [{"text":"> ","color":"dark_gray"},{"text":"","color":"dark_purple","bold":true},{"text":"ᚾ  ","color":"dark_gray","bold":true,"obfuscated":true}]
 title @s[scores={death_cd=20..,sorcerer_ult=-55}] subtitle [{"text":"> ","color":"dark_gray"},{"text":"ᚾ ","color":"dark_purple","bold":true},{"text":"ᚨ  ","color":"dark_gray","bold":true,"obfuscated":true}]

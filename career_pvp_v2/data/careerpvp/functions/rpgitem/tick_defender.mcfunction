@@ -1,3 +1,8 @@
+execute as @s[tag=!dead] if score ingame int_val matches 1.. run scoreboard players add @s all_ultcharge 20
+execute if score @s all_ultcharge matches 72000..100000 run advancement grant @s only careerpvp:ult_ok_defender
+execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100000
+function careerpvp:rpgitem/ultimatebar
+
 #defender sneak:
 execute as @s[scores={defender_sneak=..-1}] run execute as @a[distance=..6] if score @s team = @p team run effect give @s minecraft:resistance 1 0 false
 title @s[scores={death_cd=20..,defender_sneak=18}] subtitle {"text":" ♖         ♖ ","color":"dark_gray"}

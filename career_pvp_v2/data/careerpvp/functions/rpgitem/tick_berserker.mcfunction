@@ -1,3 +1,8 @@
+execute as @s[tag=!dead] if score ingame int_val matches 1.. run scoreboard players add @s all_ultcharge 24
+execute if score @s all_ultcharge matches 72000..100000 run advancement grant @s only careerpvp:ult_ok_berserker
+execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100000
+function careerpvp:rpgitem/ultimatebar
+
 #berserker sneak:
 title @s[scores={death_cd=20..,berserker_sneak=-199}] subtitle [{"text":"《","color":"gray"},{"text":" ( ▶          ◀ ) ","color":"gold"},{"text":"》","color":"gray"}]
 title @s[scores={death_cd=20..,berserker_sneak=-198}] subtitle [{"text":"《《","color":"gray"},{"text":" ( ▶          ◀ ) ","color":"gold"},{"text":"》》","color":"gray"}]

@@ -38,6 +38,7 @@ gamemode adventure @a[gamemode=!creative]
 
 gamerule sendCommandFeedback true
 scoreboard players set match_end int_val 1
+scoreboard players set @a all_ultcharge 0
 
 # extra
 scoreboard players set @a witch_ultstack 0
