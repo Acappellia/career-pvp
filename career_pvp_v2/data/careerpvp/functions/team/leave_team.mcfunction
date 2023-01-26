@@ -15,6 +15,7 @@ execute as @p[distance=..20,tag=team_leave,scores={career=12} ] at @s run execut
 
 scoreboard players set @p[tag=team_leave,distance=..10] career 0
 scoreboard players set @p[tag=team_leave,distance=..10] give_item 0
+scoreboard players set @p[tag=team_leave,distance=..10] all_ultcharge 0
 clear @p[tag=team_leave,distance=..10]
 team leave @p[tag=team_leave,distance=..10]
 tellraw @p[tag=team_leave,distance=..10] "已离开先前的队伍并清除了职业选择"

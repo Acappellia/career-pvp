@@ -15,6 +15,7 @@ execute as @p[distance=..20,tag=clear_career,scores={career=12} ] at @s run exec
 
 scoreboard players set @p[tag=clear_career,distance=..10] career 0
 scoreboard players set @p[tag=clear_career,distance=..10] give_item 0
+scoreboard players set @p[tag=clear_career,distance=..10] all_ultcharge 0
 clear @p[tag=clear_career,distance=..10]
 tellraw @p[tag=clear_career,distance=..10] "已清除职业选择"
 tag @a remove clear_career

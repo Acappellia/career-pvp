@@ -18,6 +18,7 @@ execute as @p[distance=..20,tag=choose_3,scores={career=11} ] at @s run execute 
 execute as @p[distance=..20,tag=choose_3,scores={career=12} ] at @s run execute as @e[tag=team] if score @s team = @p team run tag @s remove chosen_12
 execute as @p[distance=..20,tag=choose_3 ] at @s run execute as @e[tag=team] if score @s team = @p team run tag @s add chosen_3
 scoreboard players set @p[distance=..20,tag=choose_3 ] career 3
+scoreboard players set @p[distance=..20,tag=choose_3 ] all_ultcharge 0
 title @p[distance=..20,tag=choose_3 ] times 0 10 5
 title @p[distance=..20,tag=choose_3 ] subtitle ""
 title @p[distance=..20,tag=choose_3 ] title ""

@@ -1,7 +1,7 @@
-execute as @s[tag=!dead] if score ingame int_val matches 1.. run scoreboard players add @s all_ultcharge 20
+execute as @s[tag=!dead] if score @s sword_ult matches 1.. if score ingame int_val matches 1.. run scoreboard players add @s all_ultcharge 20
 execute if score @s all_ultcharge matches 72000..100000 run advancement grant @s only careerpvp:ult_ok_sword
 execute if score @s all_ultcharge matches 72000..100000 run tellraw @s [{"text": ">>","color": "white","bold": false},{"text":"\n你握紧了手中的剑。","color":"yellow","bold": true},{"text": "\n[终极技能已就绪]","color": "gray","bold": true},{"text": "\n>>","color": "white","bold": false}]
-execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100000
+execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100001
 function careerpvp:rpgitem/ultimatebar
 
 #sword ult

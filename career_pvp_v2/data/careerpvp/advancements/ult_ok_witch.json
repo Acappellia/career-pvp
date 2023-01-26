@@ -12,7 +12,7 @@
         "title": "【 咒血魔刃 】",
         "description": "终极技能冷却提示",
         "show_toast": true,
-        "frame": "task",
+        "frame": "challenge",
         "announce_to_chat": false,
         "hidden": false
     }
