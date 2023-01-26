@@ -136,3 +136,6 @@ bossbar add bound_warning "即将离开地图边界，请返回地图作战区�
 bossbar set bound_warning color red
 bossbar set bound_warning style progress
 bossbar set bound_warning value 100
+
+scoreboard objectives remove all_ultcharge
+scoreboard objectives add all_ultcharge dummy
