@@ -2,7 +2,7 @@ execute as @s[tag=!dead] unless score @s archer_ultcharge matches 1.. if score i
 execute if score @s all_ultcharge matches 72000..100000 run advancement grant @s only careerpvp:ult_ok_druid
 execute if score @s all_ultcharge matches 72000..100000 run tellraw @s [{"text": ">>","color": "white","bold": false},{"text":"\n妖精们在向你低语。","color":"yellow","bold": true},{"text": "\n[终极技能已就绪]","color": "gray","bold": true},{"text": "\n>>","color": "white","bold": false}]
 execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100001
-function careerpvp:rpgitem/ultimatebar
+execute if score cutscene timer matches 0.. run function careerpvp:rpgitem/ultimatebar
 
 #druid left heal
 execute as @s[tag=druid_leftheal] at @s run execute as @a[distance=..8,tag=!druid_leftheal] if score @s team = @p team run effect give @s minecraft:regeneration 1 3 true 

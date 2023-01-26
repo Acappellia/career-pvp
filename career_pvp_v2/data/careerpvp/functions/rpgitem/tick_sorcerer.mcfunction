@@ -2,7 +2,7 @@ execute as @s[tag=!dead] if score ingame int_val matches 1.. run scoreboard play
 execute if score @s all_ultcharge matches 72000..100000 run advancement grant @s only careerpvp:ult_ok_sorcerer
 execute if score @s all_ultcharge matches 72000..100000 run tellraw @s [{"text": ">>","color": "white","bold": false},{"text":"\n纯净玛娜在你的指尖迸出紫色的火花。","color":"yellow","bold": true},{"text": "\n[终极技能已就绪]","color": "gray","bold": true},{"text": "\n>>","color": "white","bold": false}]
 execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100001
-function careerpvp:rpgitem/ultimatebar
+execute if score cutscene timer matches 0.. run function careerpvp:rpgitem/ultimatebar
 
 #sorcerer_ult
 title @s[scores={death_cd=20..,sorcerer_ult=-60}] subtitle [{"text":"> ","color":"dark_gray"},{"text":"","color":"dark_purple","bold":true},{"text":"ᚾ  ","color":"dark_gray","bold":true,"obfuscated":true}]

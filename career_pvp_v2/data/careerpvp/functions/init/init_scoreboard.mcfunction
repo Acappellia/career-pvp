@@ -128,9 +128,11 @@ scoreboard objectives add death_timer minecraft.custom:time_since_death
 scoreboard objectives remove jumppad_cd
 scoreboard objectives add jumppad_cd minecraft.custom:time_since_death
 
-scoreboard objectives remove all_ultcharge
-scoreboard objectives add all_ultcharge dummy
-
 bossbar add match_timer "本局游戏剩余时间"
 bossbar set match_timer color blue
 bossbar set match_timer style notched_10
+
+bossbar add bound_warning "即将离开地图边界，请返回地图作战区域"
+bossbar set bound_warning color red
+bossbar set bound_warning style progress
+bossbar set bound_warning value 100

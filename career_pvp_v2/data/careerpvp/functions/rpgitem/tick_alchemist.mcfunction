@@ -2,7 +2,7 @@ execute as @s[tag=!dead] if score ingame int_val matches 1.. run scoreboard play
 execute if score @s all_ultcharge matches 72000..100000 run advancement grant @s only careerpvp:ult_ok_alchemist
 execute if score @s all_ultcharge matches 72000..100000 run tellraw @s [{"text": ">>","color": "white","bold": false},{"text":"\n呃......下个试验对象在哪呢？","color":"yellow","bold": true},{"text": "\n[终极技能已就绪]","color": "gray","bold": true},{"text": "\n>>","color": "white","bold": false}]
 execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100001
-function careerpvp:rpgitem/ultimatebar
+execute if score cutscene timer matches 0.. run function careerpvp:rpgitem/ultimatebar
 
 #alchemist ult
 title @s[scores={death_cd=20..,alchemist_ult=-160..-141}] subtitle [{"text":"00000000","color":"green","obfuscated":true},{"text":" >        < ","color":"dark_green","obfuscated":false},{"text":"00000000","color":"green","obfuscated":true}]

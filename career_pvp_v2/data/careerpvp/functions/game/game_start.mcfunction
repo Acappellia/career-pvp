@@ -63,4 +63,6 @@ bossbar set match_timer players @a
 
 gamerule sendCommandFeedback false
 scoreboard players set match_end int_val 0
-scoreboard players set @a all_ultcharge 0
+
+scoreboard objectives remove all_ultcharge
+scoreboard objectives add all_ultcharge dummy

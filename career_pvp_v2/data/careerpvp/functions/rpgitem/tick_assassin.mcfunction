@@ -2,7 +2,7 @@ execute as @s[tag=!dead] if score ingame int_val matches 1.. run scoreboard play
 execute if score @s all_ultcharge matches 72000..100000 run advancement grant @s only careerpvp:ult_ok_assassin
 execute if score @s all_ultcharge matches 72000..100000 run tellraw @s [{"text": ">>","color": "white","bold": false},{"text":"\n下一个目标......","color":"yellow","bold": true},{"text": "\n[终极技能已就绪]","color": "gray","bold": true},{"text": "\n>>","color": "white","bold": false}]
 execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100001
-function careerpvp:rpgitem/ultimatebar
+execute if score cutscene timer matches 0.. run function careerpvp:rpgitem/ultimatebar
 
 #assassin hide effect
 title @s[scores={death_cd=20..,assassin_hide=..-140}] subtitle [{"text":"‖ ‖ ‖ Λ ‖ ‖ ‖ ","color":"gray"},{"text":"<        >","color":"dark_gray"},{"text":" ‖ ‖ ‖ Λ ‖ ‖ ‖","color":"gray"}]

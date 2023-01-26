@@ -2,7 +2,7 @@ execute as @s[tag=!dead] if score ingame int_val matches 1.. run scoreboard play
 execute if score @s all_ultcharge matches 72000..100000 run advancement grant @s only careerpvp:ult_ok_defender
 execute if score @s all_ultcharge matches 72000..100000 run tellraw @s [{"text": ">>","color": "white","bold": false},{"text":"\n此刻你充满了守护的决心。","color":"yellow","bold": true},{"text": "\n[终极技能已就绪]","color": "gray","bold": true},{"text": "\n>>","color": "white","bold": false}]
 execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100001
-function careerpvp:rpgitem/ultimatebar
+execute if score cutscene timer matches 0.. run function careerpvp:rpgitem/ultimatebar
 
 #defender sneak:
 execute as @s[scores={defender_sneak=..-1}] run execute as @a[distance=..6] if score @s team = @p team run effect give @s minecraft:resistance 1 0 false

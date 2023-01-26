@@ -30,4 +30,4 @@ execute as @s[team=15] run bossbar set minecraft:druid_golemhealth_15 players @a
 execute store result bossbar minecraft:druid_golemhealth_15 value run data get entity @s[team=15] Health 1
 execute as @s[team=16] run bossbar set minecraft:druid_golemhealth_16 players @a[team=16]
 execute store result bossbar minecraft:druid_golemhealth_16 value run data get entity @s[team=16] Health 1
-execute as @a if score @s team = @e[type=minecraft:iron_golem,sort=nearest,limit=1] team run function careerpvp:rpgitem/druid_ult
+execute as @a[scores={death_cd=20..}] if score @s team = @e[type=minecraft:iron_golem,sort=nearest,limit=1] team run function careerpvp:rpgitem/druid_ult

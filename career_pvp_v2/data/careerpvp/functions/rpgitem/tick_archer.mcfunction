@@ -2,7 +2,7 @@ execute as @s[tag=!dead] if score ingame int_val matches 1.. run scoreboard play
 execute if score @s all_ultcharge matches 72000..100000 run advancement grant @s only careerpvp:ult_ok_archer
 execute if score @s all_ultcharge matches 72000..100000 run tellraw @s [{"text": ">>","color": "white","bold": false},{"text":"\n妖精们在向你低语。","color":"yellow","bold": true},{"text": "\n[终极技能已就绪]","color": "gray","bold": true},{"text": "\n>>","color": "white","bold": false}]
 execute if score @s all_ultcharge matches 72000..100000 run scoreboard players set @s all_ultcharge 100001
-function careerpvp:rpgitem/ultimatebar
+execute if score cutscene timer matches 0.. run function careerpvp:rpgitem/ultimatebar
 
 #archer ult
 execute as @s[scores={archer_ultcharge=1..}] unless entity @s[nbt={SelectedItem:{id:"minecraft:netherite_pickaxe"}}] run title @s subtitle ""
@@ -14,7 +14,7 @@ title @s[scores={archer_ultcharge=1,death_cd=20..}] subtitle [{"text":"--==\\\\ 
 
 #archer right effect
 scoreboard players remove @s[scores={archer_rightcharge=..-1}] archer_rightcharge 1
-title @s[scores={archer_rightcharge=..-1}] subtitle {"text":"︽","color":"green"}
+title @s[scores={death_cd=20..,archer_rightcharge=..-1}] subtitle {"text":"︽","color":"green"}
 title @s[scores={archer_rightcharge=0}] subtitle ""
 scoreboard players set @s[scores={death_cd=..20}] archer_rightcharge 10
 
@@ -30,9 +30,9 @@ execute as @s[scores={archer_jumpcharge=21..,archer_jumps=1..}] run scoreboard p
 execute as @s[scores={archer_jumpcharge=21..,archer_jumps=1..}] run effect clear @s minecraft:jump_boost
 execute as @s[scores={archer_jumpcharge=21..,archer_jumps=1..}] run scoreboard players set @s archer_jumpcharge 0
 execute as @s[scores={archer_jumps=1..}] run scoreboard players set @s archer_jumps 0
-execute if score ingame int_val matches 1.. run title @s[scores={archer_jumpcd=..-1}] title {"text":"-         -","color":"black"}
-execute if score ingame int_val matches 1.. run title @s[scores={archer_jumpcd=0..,archer_jumpcharge=0}] title {"text":"-         -","color":"gray"}
-execute if score ingame int_val matches 1.. run title @s[scores={archer_jumpcd=0..,archer_jumpcharge=1..20}] title {"text":"-         -","color":"dark_green"}
-execute if score ingame int_val matches 1.. run title @s[scores={archer_jumpcd=0..,archer_jumpcharge=21..40}] title [{"text":"- ","color":"dark_green"},{"text":">       <","color":"green"},{"text":" -","color":"drak_green"}]
-execute if score ingame int_val matches 1.. run title @s[scores={archer_jumpcd=0..,archer_jumpcharge=41..60}] title [{"text":"- ","color":"dark_green"},{"text":"> >     < <","color":"green"},{"text":" -","color":"dark_green"}]
-execute if score ingame int_val matches 1.. run title @s[scores={archer_jumpcd=0..,archer_jumpcharge=61..}] title {"text":"> > >  ^  < < <","color":"green"}
+execute if score ingame int_val matches 1.. run title @s[scores={death_cd=20..,archer_jumpcd=..-1}] title {"text":"-         -","color":"black"}
+execute if score ingame int_val matches 1.. run title @s[scores={death_cd=20..,archer_jumpcd=0..,archer_jumpcharge=0}] title {"text":"-         -","color":"gray"}
+execute if score ingame int_val matches 1.. run title @s[scores={death_cd=20..,archer_jumpcd=0..,archer_jumpcharge=1..20}] title {"text":"-         -","color":"dark_green"}
+execute if score ingame int_val matches 1.. run title @s[scores={death_cd=20..,archer_jumpcd=0..,archer_jumpcharge=21..40}] title [{"text":"- ","color":"dark_green"},{"text":">       <","color":"green"},{"text":" -","color":"drak_green"}]
+execute if score ingame int_val matches 1.. run title @s[scores={death_cd=20..,archer_jumpcd=0..,archer_jumpcharge=41..60}] title [{"text":"- ","color":"dark_green"},{"text":"> >     < <","color":"green"},{"text":" -","color":"dark_green"}]
+execute if score ingame int_val matches 1.. run title @s[scores={death_cd=20..,archer_jumpcd=0..,archer_jumpcharge=61..}] title {"text":"> > >  ^  < < <","color":"green"}

@@ -34,7 +34,7 @@ bossbar set minecraft:druid_golemhealth_13 players
 bossbar set minecraft:druid_golemhealth_14 players
 bossbar set minecraft:druid_golemhealth_15 players
 bossbar set minecraft:druid_golemhealth_16 players
-execute as @e[type=iron_golem,tag=druid_golem] run function careerpvp:rpgitem/tick_xiaoye
+execute as @e[type=iron_golem,tag=druid_golem] at @s run function careerpvp:rpgitem/tick_xiaoye
 
 #assassin right reset speed
 execute as @e[tag=assassin_rmarker] at @s run execute as @a[scores={assassin_right=..0},distance=2..] if score @s team = @e[tag=assassin_rmarker,sort=nearest,limit=1] setteam run scoreboard players set @s +alt_vector_bypct 1
